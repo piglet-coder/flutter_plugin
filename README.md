@@ -8,7 +8,7 @@ dependencies:
     sdk: flutter
     ...
 
-  flutter_package:
+  flutter_plugin:
     git:
       url: https://github.com/piglet-coder/flutter_plugin.git
 ```
