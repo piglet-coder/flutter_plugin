@@ -16,4 +16,5 @@
 
 library flutter_plugin;
 
-export 'utils/z_log_util.dart';
+export 'package:flutter_plugin/utils/z_log.dart';
+export 'package:flutter_plugin/utils/z_device_info.dart';

@@ -2,20 +2,20 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
+import 'package:flutter_plugin/constants.dart';
 
 /// @author zdl
 /// date 2020/11/25 10:06
 /// email zdl328465042@163.com
 /// description log工具类
-class ZLogUtil {
-  ZLogUtil._();
+class ZLog {
+  ZLog._();
 
-  static final _channelName = 'com.piglet_coder.flutter_plugin.utils.z_log';
   static var _channel;
 
   static _getChannel() {
     if (Platform.isAndroid) {
-      return _channel ?? MethodChannel(_channelName);
+      return _channel ?? MethodChannel(channelNameLog);
     } else {
       return null;
     }
@@ -68,7 +68,7 @@ class ZLogUtil {
         'tag': tag,
         'msg': msg,
       };
-      _getChannel()?.invokeMethod('ZLogUtil${level.index}', map);
+      _getChannel()?.invokeMethod('ZLogMethod${level.index}', map);
     } else {
       print('$tag $msg');
     }
