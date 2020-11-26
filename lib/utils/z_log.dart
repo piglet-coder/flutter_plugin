@@ -7,7 +7,7 @@ import 'package:flutter_plugin/constants.dart';
 /// @author zdl
 /// date 2020/11/25 10:06
 /// email zdl328465042@163.com
-/// description log工具类
+/// description log通道
 class ZLog {
   ZLog._();
 

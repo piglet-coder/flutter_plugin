@@ -3,6 +3,10 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter_plugin/constants.dart';
 
+/// @author zdl
+/// date 2020/11/26 17:08
+/// email zdl328465042@163.com
+/// description 设备信息通道
 class ZDeviceInfo {
   ZDeviceInfo._();
 
