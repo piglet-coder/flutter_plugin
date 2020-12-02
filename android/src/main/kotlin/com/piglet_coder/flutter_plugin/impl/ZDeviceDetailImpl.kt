@@ -24,9 +24,6 @@ class ZDeviceDetailImpl(private val ctx: Context): MethodChannel.MethodCallHandl
             "getUuid" -> {
                 result.success(getUuid())
             }
-            "getMac" -> {
-                result.success(getMacAddress())
-            }
             "getFingerprint" -> {
                 result.success(Build.FINGERPRINT)
             }
@@ -47,25 +44,5 @@ class ZDeviceDetailImpl(private val ctx: Context): MethodChannel.MethodCallHandl
             edit.apply()
         }
         return uuid ?: ""
-    }
-
-    //获取macAddress，暂用
-    @SuppressLint("HardwareIds")
-    private fun getMacAddress(): String{
-        var macAddress = ""
-        val wifiManager = ctx.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager?
-        wifiManager?.let {
-            val info = wifiManager.connectionInfo
-
-            if (!wifiManager.isWifiEnabled) {
-                //必须先打开，才能获取到MAC地址
-                wifiManager.isWifiEnabled = true
-                wifiManager.isWifiEnabled = false
-            }
-            if (null != info) {
-                macAddress = info.macAddress
-            }
-        }
-        return macAddress
     }
 }
