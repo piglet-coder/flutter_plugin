@@ -4,6 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:flutter_plugin/constants.dart';
 import 'package:permission_handler/permission_handler.dart';
 
+
+/// @author zdl
+/// date 2020/12/2 14:47
+/// email zdl328465042@163.com
+/// description 系统日历通道
 class ZSystemCalendar {
   const ZSystemCalendar._();
 
