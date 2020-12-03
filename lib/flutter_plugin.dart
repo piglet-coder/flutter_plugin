@@ -18,3 +18,4 @@ library flutter_plugin;
 
 export 'package:flutter_plugin/utils/z_log.dart';
 export 'package:flutter_plugin/utils/z_device_info.dart';
+export 'package:flutter_plugin/utils/z_system_calendar.dart';

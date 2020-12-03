@@ -14,4 +14,7 @@ object Constants {
 
     // 设备详细信息方法通道
     const val channelNameDeviceDetail = "$base/utils/z_device_detail";
+
+    // 系统日历添加日程方法通道
+    const val channelNameSystemCalendar = "$base/utils/z_system_calendar";
 }
