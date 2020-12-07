@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.summary          = 'A new Flutter plugin.'
   s.description      = <<-DESC
 A Flutter plugin for android used.
-Downloaded by pub (not CocoaPods).
                        DESC
   s.homepage         = 'https://github.com/piglet-coder/flutter_plugin'
   s.license          = { :file => '../LICENSE' }
