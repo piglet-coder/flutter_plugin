@@ -11,7 +11,7 @@ A Flutter plugin for android used.
   s.homepage         = 'https://github.com/piglet-coder/flutter_plugin'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'piglet' => 'zdl328465042@163.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :http => 'https://github.com/piglet-coder/flutter_plugin' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
