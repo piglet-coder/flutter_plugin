@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 A Flutter plugin for android used.
                        DESC
   s.homepage         = 'https://github.com/piglet-coder/flutter_plugin'
-  s.license          = { :file => '../LICENSE' }
+  s.license          = { :type => 'BSD', :file => '../LICENSE' }
   s.author           = { 'piglet' => 'zdl328465042@163.com' }
   s.source           = { :http => 'https://github.com/piglet-coder/flutter_plugin' }
   s.source_files = 'Classes/**/*'
